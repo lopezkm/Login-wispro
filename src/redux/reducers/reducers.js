@@ -1,9 +1,19 @@
-const ADD_IMAGE = "ADD_IMAGE";
-const ADD_IMAGE_CLIENT = "ADD_IMAGE_CLIENT";
+import Logued from '../../mockData/logued.js';
+import Registered from '../../mockData/registered.js';
+import { ADD_IMAGE, ADD_IMAGE_CLIENT } from '../actionsNames.js';
+
 
 const initialState = {
-  imageStamp:"",
-  imageClient:""
+  registered:[
+    {
+      firstName: 'Pedro',
+      lastName: 'Carrazco',
+      email: 'pedrito@mail.com',
+      password: '11111',
+      date:''
+    },
+  ],
+  logued:[]
 }
 
 function Reducer(state = initialState, action) {

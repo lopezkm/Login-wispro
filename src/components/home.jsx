@@ -9,9 +9,14 @@ export default function Home() {
 
     const dispatch = useDispatch();
 
+    var date = new Date().toString().split(" ", 3)[2];
+
     return (
-        <Form>
+        <div>
+        {`hoy es ${date}`}
+        <Form> 
 
         </Form>
+        </div>
     )
 }

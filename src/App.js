@@ -9,8 +9,8 @@ import './App.css';
 function App() {
   return (
     <div>
-      <Route exact path ='/' render= {() => <Home/>}/> 
       <Route exact ='/' render= {() => <Navbar/>}/> 
+      <Route exact path ='/' render= {() => <Home/>}/> 
       <Route exact path ='/login' render= {() => <Login/>}/> 
       <Route exact path ='/register' render= {() => <Register/>}/> 
     </div>

@@ -1,5 +1,4 @@
-const ADD_IMAGE = "ADD_IMAGE";
-const ADD_IMAGE_CLIENT = "ADD_IMAGE_CLIENT";
+import { ADD_IMAGE, ADD_IMAGE_CLIENT } from '../actionsNames.js';
 
 export function addImage(payload) {
     return { 
