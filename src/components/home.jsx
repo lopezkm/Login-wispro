@@ -6,7 +6,6 @@ export default function Home() {
 
     const idLogued = useSelector(state => state.id);
     const users = useSelector(state => state.registered);
-    console.log(users);
 
     return (
         <div className="container-home"> { idLogued ? 

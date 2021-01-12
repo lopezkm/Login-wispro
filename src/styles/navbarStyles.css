@@ -2,10 +2,29 @@
     margin-left: 2rem;
 }
 
+.reset-button-navbar {
+    background-color: black;
+    border: 0.05rem solid black;
+    color:red;
+    margin-left: 2rem;
+}
+.reset-button-navbar:focus {
+    box-shadow: none;
+    background-color: white;
+    border: 0.05rem solid white;
+    color:red;
+}
+.reset-button-navbar:hover {
+    box-shadow: none;
+    background-color: red;
+    border: 0.05rem solid red;
+    color: white;
+}
+
 .title-navbar {
     color: white;
     width: 100%;
-    margin-left: 28%;
+    margin-left: 22%;
 }
 
 .login-link-navbar {

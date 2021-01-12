@@ -17,6 +17,4 @@ store.subscribe( function () {
     saveState(store.getState())
 })
 
-//localStorage.removeItem(key)
-
 export default store;

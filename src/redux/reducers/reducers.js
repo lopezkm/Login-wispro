@@ -35,10 +35,10 @@ function Reducer(state = initialState, action) {
 			}
 
 		case EDIT_USER:
-
+			
 			return {
 				...state,
-				registered: [ ...state.registered.filter(user => user.id !== action.payload), action.payload ]
+				registered: [ ...state.registered.filter(user => user.id !== action.payload.id), action.payload ]
 			}
     
 		case DELETE_USER:

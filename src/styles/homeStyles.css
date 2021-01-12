@@ -1,9 +1,11 @@
+body{
+    background-color: gray !important; 
+}
 .container-home {
     background-color: gray;
     display: flex;
     justify-content: center;
 }
-
 .card-container-home {
     width: 80%;
     margin-top: 1rem;
