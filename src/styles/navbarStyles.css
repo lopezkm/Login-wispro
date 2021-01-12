@@ -1,0 +1,18 @@
+.home-link-navbar {
+    margin-left: 2rem;
+}
+
+.title-navbar {
+    color: white;
+    width: 100%;
+    margin-left: 28%;
+}
+
+.login-link-navbar {
+    color: white !important;
+}
+
+.register-link-navbar {
+    margin-right: 2rem;
+    color: white !important;
+}

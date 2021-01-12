@@ -1,5 +1,6 @@
 const Registered = [
     {
+        id: '1',
         firstName: 'Sergio',
         lastName: 'Dalma',
         password: '12312',
@@ -7,6 +8,7 @@ const Registered = [
         date: '1'
     },
     {
+        id: '2',
         firstName: 'Mariano',
         lastName: 'Pintos',
         password: '22222',
@@ -14,6 +16,7 @@ const Registered = [
         date: '1'
     },
     {
+        id: '3',
         firstName: 'Pedro',
         lastName: 'Almodobar',
         password: '11111',
@@ -21,6 +24,7 @@ const Registered = [
         date: '2'
     },
     {
+        id: '4',
         firstName: 'Jasinto',
         lastName: 'Luke',
         password: '33333',
@@ -28,6 +32,7 @@ const Registered = [
         date: '2'
     },
     {
+        id: '5',
         firstName: 'Jose',
         lastName: 'Perez',
         password: '44444',
@@ -35,6 +40,7 @@ const Registered = [
         date: '3'
     },
     {
+        id: '6',
         firstName: 'Ricardo',
         lastName: 'Montaner',
         password: '55555',
@@ -42,6 +48,7 @@ const Registered = [
         date: '3'
     },
     {
+        id: '7',
         firstName: 'Luis',
         lastName: 'Medina',
         password: '56565',
@@ -49,6 +56,7 @@ const Registered = [
         date: '4'
     },
     {
+        id: '8',
         firstName: 'Maria',
         lastName: 'Walsh',
         password: '77777',
@@ -56,6 +64,7 @@ const Registered = [
         date: '4'
     },
     {
+        id: '9',
         firstName: 'Sandra',
         lastName: 'Mianovich',
         password: '88888',
@@ -63,6 +72,7 @@ const Registered = [
         date: '4'
     },
     {
+        id: '10',
         firstName: 'Rene',
         lastName: 'Favaloro',
         password: '99999',
@@ -70,6 +80,7 @@ const Registered = [
         date: '4'
     },
     {
+        id: '11',
         firstName: 'Jasiel',
         lastName: 'Anis',
         password: '10101',
@@ -77,6 +88,7 @@ const Registered = [
         date: '4'
     },
     {
+        id: '12',
         firstName: 'Raul',
         lastName: 'Portal',
         password: '21212',
@@ -84,6 +96,7 @@ const Registered = [
         date: '4'
     },
     {
+        id: '13',
         firstName: 'Martin',
         lastName: 'Palermo',
         password: '12121',
@@ -91,6 +104,7 @@ const Registered = [
         date: '5'
     },
     {
+        id: '14',
         firstName: 'Belen',
         lastName: 'Franchese',
         password: '22322',
@@ -98,6 +112,7 @@ const Registered = [
         date: '5'
     },
     {
+        id: '15',
         firstName: 'Flor',
         lastName: 'Peña',
         password: '23332',
@@ -105,6 +120,7 @@ const Registered = [
         date: '6'
     },
     {
+        id: '16',
         firstName: 'Susana',
         lastName: 'Gimenez',
         password: '32332',
@@ -112,6 +128,7 @@ const Registered = [
         date: '6'
     },
     {
+        id: '17',
         firstName: 'Elena',
         lastName: 'Santos',
         password: '33434',
@@ -119,6 +136,7 @@ const Registered = [
         date: '8'
     },
     {
+        id: '18',
         firstName: 'Marisol',
         lastName: 'Perez',
         password: '44343',
@@ -126,6 +144,7 @@ const Registered = [
         date: '8'
     },
     {
+        id: '19',
         firstName: 'Juan',
         lastName: 'Minujin',
         password: '34524',
@@ -133,10 +152,15 @@ const Registered = [
         date: '8'
     },
     {
+        id: '20',
+        firstName: 'Leo',
+        lastName: 'Montero',
+        password: '38324',
         email: 'leo@mail.com',
         date: '10'
     },
     {
+        id: '21',
         firstName: 'Facundo',
         lastName: 'Espasa',
         password: '55264',
@@ -144,6 +168,7 @@ const Registered = [
         date: '10'
     },
     {
+        id: '22',
         firstName: 'Leon',
         lastName: 'Alperovich',
         password: '557852',
@@ -151,6 +176,7 @@ const Registered = [
         date: '10'
     },
     {
+        id: '23',
         firstName: 'Olivia',
         lastName: 'Newton',
         password: '62345',
@@ -158,6 +184,7 @@ const Registered = [
         date: '10'
     },
     {
+        id: '24',
         firstName: 'Augusto',
         lastName: 'Reinoso',
         password: '752148',
@@ -165,6 +192,7 @@ const Registered = [
         date: '10'
     },
     {
+        id: '25',
         firstName: 'Luciano',
         lastName: 'Castro',
         password: '12548',
@@ -172,6 +200,7 @@ const Registered = [
         date: '11'
     },
     {
+        id: '26',
         firstName: 'Gloria',
         lastName: 'Trevi',
         password: '25485',
@@ -179,6 +208,7 @@ const Registered = [
         date: '12'
     },
     {
+        id: '27',
         firstName: 'Marcos',
         lastName: 'Dipalma',
         password: '87879',
@@ -186,6 +216,7 @@ const Registered = [
         date: '12'
     },
     {
+        id: '28',
         firstName: 'Roxana',
         lastName: 'Colombia',
         password: '23497',
@@ -193,6 +224,7 @@ const Registered = [
         date: '12'
     },
     {
+        id: '29',
         firstName: 'Julio',
         lastName: 'Lopez',
         password: '99241',
@@ -200,6 +232,7 @@ const Registered = [
         date: '12'
     },
     {
+        id: '30',
         firstName: 'Mirta',
         lastName: 'Legrand',
         password: '43911',
@@ -207,6 +240,7 @@ const Registered = [
         date: '12'
     },
     {
+        id: '31',
         firstName: 'Laura',
         lastName: 'Esquivel',
         password: '99254',
@@ -214,6 +248,7 @@ const Registered = [
         date: '13'
     },
     {
+        id: '32',
         firstName: 'Alfonsina',
         lastName: 'Storni',
         password: '85647',

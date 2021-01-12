@@ -1,0 +1,17 @@
+.container-home {
+    background-color: gray;
+    display: flex;
+    justify-content: center;
+}
+
+.card-container-home {
+    width: 80%;
+    margin-top: 1rem;
+}
+
+.title-container-home {
+    color: white;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-bottom: 1rem;
+}

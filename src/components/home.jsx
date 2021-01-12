@@ -1,22 +1,29 @@
 import React from 'react';
 import { Form } from 'react-bootstrap';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
+import User from './user.jsx';
 
 export default function Home() {
 
-    const stamp = useSelector(state => state.imageStamp);
-    const stampClient = useSelector(state => state.imageClient);
+    const idLogued = useSelector(state => state.id);
+    const users = useSelector(state => state.registered);
 
-    const dispatch = useDispatch();
-
-    var date = new Date().toString().split(" ", 3)[2];
 
     return (
-        <div>
-        {`hoy es ${date}`}
-        <Form> 
-
-        </Form>
+        <div className="container-home"> { idLogued ? 
+            <div className="card-container-home">
+                <h1 className="title-container-home">Usuarios Registrados</h1>
+                {
+                    users.map( (user) => <User
+                        firstName= {user.firstName}
+                        lastName= {user.lastName}
+                        email= {user.email}
+                        id= {user.id}
+                        />
+                    )
+                }
+            </div> 
+            : null }
         </div>
     )
 }
