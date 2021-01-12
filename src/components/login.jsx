@@ -3,7 +3,10 @@ import { Form, Button } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { newLogued, idLogued } from '../redux/actions/actions.js';
 import { Redirect } from 'react-router-dom';
+import { toast } from 'react-toastify';
 
+
+toast.configure();
 export default function Login() {
 
     const [logued, setLogued] = useState({
@@ -28,11 +31,25 @@ export default function Login() {
         e.preventDefault();
         var existUser = allRegister.filter(user => user.email === logued.email);
         if(existUser.length === 0) {
-            alert("Email invalido - Debes registrarte para poder ingresar");
-            return;
+            toast.error( "Email invalido - Debes registrarte para poder ingresar", {
+				position: 'top-center',
+				autoClose: 2000,
+				hideProgressBar: false,
+				closeOnClick: true,
+				pauseOnHover: false,
+				draggable: true,
+				progress: undefined
+			} );
         } else if(existUser[0].password !== logued.password) {
-            alert("Contraseña incorrecta");
-            return;
+            toast.error( "Contraseña incorrecta", {
+				position: 'top-center',
+				autoClose: 2000,
+				hideProgressBar: false,
+				closeOnClick: true,
+				pauseOnHover: false,
+				draggable: true,
+				progress: undefined
+			} );
         } else {
             var actualDate = new Date().toString().split(" ", 3)[2];
             setLogued({
@@ -40,7 +57,15 @@ export default function Login() {
                 date: actualDate
             })
             setIdLoguedUser(existUser[0].id);
-            alert(`Bienvenid@ ${existUser[0].firstName}`);
+            toast.success( `Bienvenid@ ${existUser[0].firstName}`, {
+				position: 'top-center',
+				autoClose: 2000,
+				hideProgressBar: false,
+				closeOnClick: true,
+				pauseOnHover: false,
+				draggable: true,
+				progress: undefined
+			} );
         }
     }
 
@@ -48,35 +73,37 @@ export default function Login() {
         if(idLoguedUser) {
             dispatch(idLogued(idLoguedUser));
             dispatch(newLogued(logued));
-            setFlag(true);
+            setTimeout(() => {
+                setFlag(true);
+            }, 2100); 
         }
     },[idLoguedUser]);
 
     return (
         <Form className="form-login" onSubmit={handleSubmit}>
-        {flag ? <Redirect to="/"/> : null}
+            {flag ? <Redirect to="/"/> : null}
             <h2 className="form-title-login">LOGIN</h2>
             <Form.Group controlId="formBasicEmail">
-                <Form.Label className="form-login-label">Email address</Form.Label>
+                <Form.Label className="form-login-label">Email</Form.Label>
                 <Form.Control className="form-login-control"
                     onChange={handleChange}
                     name="email" 
                     type="email" 
-                    placeholder="please enter your email"/>
+                    placeholder="ingresa tu email"/>
                 <Form.Text className="text-muted">
                 </Form.Text>
             </Form.Group>
 
             <Form.Group controlId="formBasicPassword">
-                <Form.Label className="form-login-label">Password</Form.Label>
+                <Form.Label className="form-login-label">Contraseña</Form.Label>
                 <Form.Control className="form-login-control"
                     onChange={handleChange}
                     name="password" 
                     type="password" 
-                    placeholder="please enter your password" />
+                    placeholder="ingresa tu contraseña" />
             </Form.Group>
             <Button className="form-login-button" type="submit">
-                Done
+                Ingresar
             </Button>
         </Form>
     )

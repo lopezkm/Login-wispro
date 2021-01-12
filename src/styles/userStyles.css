@@ -13,12 +13,13 @@
 }
 
 .card-text-title-user {
+    font-size:1.3rem;
     margin-left: 1rem;
     margin-top: 0.5rem;
 }
 .card-text-email-user {
-  margin-left: 1rem;
-  margin-top: 1rem;
+  margin-top: 0.8rem;
+  margin-right: 0.5rem;
 }
 
 .card-button-delete-user {

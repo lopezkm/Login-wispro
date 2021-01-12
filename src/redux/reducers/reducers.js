@@ -35,26 +35,17 @@ function Reducer(state = initialState, action) {
 			}
 
 		case EDIT_USER:
-		  
-		let edited = state.registered.forEach( user => { 
-        	if(user.id === action.payload.id) {
-          		user.firstName = action.payload.firstName;
-          		user.lastName = action.payload.lastName;
-          		user.email = action.payload.email;
-          		user.password = action.payload.password;
-        	}
-      	});
 
 			return {
 				...state,
-				registered: edited
+				registered: [ ...state.registered.filter(user => user.id !== action.payload), action.payload ]
 			}
     
 		case DELETE_USER:
 		
 			return {
 				...state,
-				registered: state.registered.filter(user => user.id !== action.payload.id)
+				registered: state.registered.filter(user => user.id !== action.payload)
 			}
        
 		default:

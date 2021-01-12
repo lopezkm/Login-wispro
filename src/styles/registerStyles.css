@@ -1,31 +1,41 @@
-.form-login {
+.form-register {
     background-color: white;
     border: 0.2rem solid black;
     margin: 2rem 15rem 5rem 15rem;
     padding: 1rem 3rem 2rem 3rem;
 }
 
-.form-title-login{
+.form-title-register {
     text-align: center;
 }
 
-.form-login-label {
+.form-register-label {
     margin-top: 1rem;
 }
 
-.form-login-control {
+.form-register-control {
     border: none;
     border-radius: 0;
     border-bottom: 0.1rem solid black;
     margin-bottom: 1rem;
 }
-.form-login-control:focus {
+.form-register-control:focus {
     box-shadow: none;
 }
 
-.form-login-button {
+.form-register-button {
     margin-top:1rem;
     background-color: gray;
     border: 0.1rem solid gray;
-    margin-left: 90%;
+    margin-left: 85%;
+}
+.form-register-button:focus {
+    box-shadow: none;
+    background-color: gray;
+    border: 0.1rem solid gray;
+}
+.form-register-button:hover {
+    box-shadow: none;
+    background-color: gray;
+    border: 0.1rem solid gray;
 }

@@ -10,7 +10,7 @@ export default function NavBar() {
             <Navbar.Collapse id="responsive-navbar-nav" className="d-flex justify-content-end">
                 <Nav>
                     <Nav.Link className="login-link-navbar" href="/login">Login</Nav.Link>
-                    <Nav.Link className="register-link-navbar" href="/register">Register</Nav.Link>
+                    <Nav.Link className="register-link-navbar" href="/register">Registrate</Nav.Link>
                 </Nav>
             </Navbar.Collapse>
         </Navbar>

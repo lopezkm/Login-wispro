@@ -1,0 +1,41 @@
+.form-login {
+    background-color: white;
+    border: 0.2rem solid black;
+    margin: 2rem 15rem 5rem 15rem;
+    padding: 1rem 3rem 2rem 3rem;
+}
+
+.form-title-login {
+    text-align: center;
+}
+
+.form-login-label {
+    margin-top: 1rem;
+}
+
+.form-login-control {
+    border: none;
+    border-radius: 0;
+    border-bottom: 0.1rem solid black;
+    margin-bottom: 1rem;
+}
+.form-login-control:focus {
+    box-shadow: none;
+}
+
+.form-login-button {
+    margin-top:1rem;
+    background-color: gray;
+    border: 0.1rem solid gray;
+    margin-left: 90%;
+}
+.form-login-button:focus {
+    box-shadow: none;
+    background-color: gray;
+    border: 0.1rem solid gray;
+}
+.form-login-button:hover {
+    box-shadow: none;
+    background-color: gray;
+    border: 0.1rem solid gray;
+}
