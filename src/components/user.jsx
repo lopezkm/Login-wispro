@@ -5,7 +5,7 @@ import { editUser, deleteUser } from '../redux/actions/actions.js';
 
 export default function User({firstName, lastName, email, id, password, date}) {
 
-    const [idUser, setIdUser] = useState();
+   /*  const [idUser, setIdUser] = useState(); */
     const [show, setShow] = useState(false);
     const [userEdit, setUserEdit] = useState(null);
     const dispatch = useDispatch();
@@ -24,7 +24,7 @@ export default function User({firstName, lastName, email, id, password, date}) {
     }
 
     function delUser(id) {
-        setIdUser(id);
+        dispatch(deleteUser(id));
     };
 
     useEffect(() => {
@@ -38,11 +38,11 @@ export default function User({firstName, lastName, email, id, password, date}) {
         });
     }, [id, firstName, lastName, email, password, date])
 
-    useEffect(() => {
+    /* useEffect(() => {
         if(idUser) {
             dispatch(deleteUser(idUser));
         }
-    }, [idUser])
+    }, [idUser]) */
 
     return (
         <Card className="card-container-user">
