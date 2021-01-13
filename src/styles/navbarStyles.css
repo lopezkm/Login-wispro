@@ -1,5 +1,10 @@
+.container-wrapper-navbar {
+    background-color: black !important;
+}
+
 .home-link-navbar {
     margin-left: 2rem;
+    color: white !important;
 }
 
 .reset-button-navbar {
@@ -10,28 +15,39 @@
 }
 .reset-button-navbar:focus {
     box-shadow: none;
-    background-color: white;
-    border: 0.05rem solid white;
+    background-color: black;
+    border: 0.05rem solid black;
     color:red;
 }
 .reset-button-navbar:hover {
     box-shadow: none;
-    background-color: red;
-    border: 0.05rem solid red;
-    color: white;
+    background-color: black;
+    border: 0.05rem solid black;
+    color: red;
 }
 
 .title-navbar {
     color: white;
     width: 100%;
-    margin-left: 22%;
+    margin-left: 10%;
+}
+.inicial-title-navbar {
+    color: white;
+    width: 100%;
+    margin-left: 25%;
+}
+
+.graphics-link-navbar {
+    color: chartreuse !important;
+    margin-left:2rem;
 }
 
 .login-link-navbar {
     color: white !important;
+    margin-right: 1rem;
 }
 
 .register-link-navbar {
-    margin-right: 2rem;
+    margin-right: 3rem;
     color: white !important;
 }

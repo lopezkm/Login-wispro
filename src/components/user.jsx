@@ -3,7 +3,7 @@ import { Card, Button, Modal, Form } from 'react-bootstrap';
 import { useDispatch } from 'react-redux';
 import { editUser, deleteUser } from '../redux/actions/actions.js';
 
-export default function User({firstName, lastName, email, id, password}) {
+export default function User({firstName, lastName, email, id, password, date}) {
 
     const [idUser, setIdUser] = useState();
     const [show, setShow] = useState(false);
@@ -30,12 +30,13 @@ export default function User({firstName, lastName, email, id, password}) {
     useEffect(() => {
         setUserEdit({
             id,
+            date,
             firstName,
             lastName,
             email,
             password
         });
-    }, [id, firstName, lastName, email, password])
+    }, [id, firstName, lastName, email, password, date])
 
     useEffect(() => {
         if(idUser) {
@@ -51,7 +52,7 @@ export default function User({firstName, lastName, email, id, password}) {
                 backdrop="static"
                 keyboard={false}
             >
-                <Modal.Header>
+                <Modal.Header className="modal-edit-header">
                     <Modal.Title>Editando datos de {userEdit && userEdit.firstName}</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
@@ -94,7 +95,7 @@ export default function User({firstName, lastName, email, id, password}) {
                             placeholder={userEdit && userEdit.password} />
                     </Form.Group>
                 </Modal.Body>
-                <Modal.Footer>
+                <Modal.Footer className="modal-edit-footer">
                     <Button className="modal-button-close-user" onClick={() => setShow(false)}>
                         Cancelar
                     </Button>

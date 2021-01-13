@@ -9,7 +9,6 @@ export default function Home() {
     let orderUsers = users.sort(function(a, b) {
         return (a.id - b.id);
     });
-    console.log(orderUsers);
 
     return (
         <div className="container-home"> { idLogued ? 
@@ -22,6 +21,7 @@ export default function Home() {
                         email= {user.email}
                         id= {user.id}
                         password= {user.password} 
+                        date= {user.date}
                         />
                     )
                 }

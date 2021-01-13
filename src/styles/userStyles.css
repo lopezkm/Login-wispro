@@ -1,8 +1,10 @@
 .card-container-user {
-    margin: 0 8rem 0.2rem 8rem;
+    margin: 0 8rem 0.1rem 8rem;
     border: none;
     border-radius: 0;
-    border-bottom: 0.1rem solid gray;
+    border-bottom: 0.1rem solid black;
+    background-color: black;
+    color: white;
 }
 
 .card-body-user {
@@ -23,53 +25,85 @@
 }
 
 .card-button-delete-user {
-    background-color: lightgray;
-    border: 0.1rem solid gray;
-    color: black;
+    background-color: black;
+    border: 0.1rem solid black;
+    color: red;
     margin-left: 0.5rem;
     margin-top: 0.2rem;
     margin-right: 0.5rem;
 }
 .card-button-delete-user:focus {
     box-shadow: none !important;
-    background-color: lightgray;
-    border: 0.1rem solid gray;
-    color: black;
+    background-color: black;
+    border: 0.1rem solid black;
+    color: red;
 } 
 .card-button-delete-user:hover {
-    color: white;
-    background-color: gray;
-    border: 0.1rem solid gray;
+    color: red;
+    background-color: black;
+    border: 0.1rem solid black;
 } 
 
 .card-button-edit-user {
     margin-right: 0.5rem;
     margin-top: 0.2rem;
+    color: chartreuse;
+    background-color: black;
+    border: 0.1rem solid black;
 }
 .card-button-edit-user:focus {
     box-shadow: none !important;
+    color: chartreuse;
+    background-color: black;
+    border: 0.1rem solid black;
+} 
+.card-button-edit-user:hover {
+    color: chartreuse;
+    background-color: black;
+    border: 0.1rem solid black;
 } 
 
+.modal-edit-header {
+    background-color: black;
+    color: white;
+}
+
+.modal-edit-footer {
+    background-color: black;
+}
 
 .modal-button-edit-user {
-    background-color: lightgray;
-    border: 0.1rem solid gray;
-    color: black;
+    color: chartreuse;
+    background-color: black;
+    border: 0.1rem solid black;
     margin-right: 0.5rem;
     margin-top: 0.2rem;
 }
 .modal-button-edit-user:focus {
     box-shadow: none !important;
-    background-color: lightgray;
-    border: 0.1rem solid gray;
-    color: black;
+    color: chartreuse;
+    background-color: black;
+    border: 0.1rem solid black;
 } 
 .modal-button-edit-user:hover {
-    color: white;
-    background-color: gray;
-    border: 0.1rem solid gray;
+    color: chartreuse;
+    background-color: black;
+    border: 0.1rem solid black;
 } 
 
+.modal-button-close-user {
+    color: red;
+    background-color: black;
+    border: 0.1rem solid black;
+} 
 .modal-button-close-user:focus {
     box-shadow: none !important;
+    color: red;
+    background-color: black;
+    border: 0.1rem solid black;
+} 
+.modal-button-close-user:hover {
+    color: red;
+    background-color: black;
+    border: 0.1rem solid black;
 } 
