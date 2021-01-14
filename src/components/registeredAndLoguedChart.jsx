@@ -8,7 +8,7 @@ export default function LoguedChart() {
 
     const idLogin = useSelector(state => state.id);
     const logued = useSelector(state => state.logued);
-    const registered = useSelector(state => state.registered);
+    const registered = useSelector(state => state.registeredInfo);
     
     const daysRegistered = [];
     registered.forEach(user => { daysRegistered.push(user.date)});
@@ -17,11 +17,6 @@ export default function LoguedChart() {
     20:0, 21:0, 22:0, 23:0, 24:0, 25:0, 26:0, 27:0, 28:0, 29:0, 30:0, 31:0};
     daysRegistered.forEach(day => {
         daysAndQuantityRegistered[day] = (daysAndQuantityRegistered[day] + 1);
-        /* if(daysAndQuantityRegistered[day]) {
-            daysAndQuantityRegistered[day] = (daysAndQuantityRegistered[day] + 1);
-        } else {
-            daysAndQuantityRegistered[day] = 1;
-        } */
     })
     
     const daysLogued = [];
@@ -31,29 +26,13 @@ export default function LoguedChart() {
     20:0, 21:0, 22:0, 23:0, 24:0, 25:0, 26:0, 27:0, 28:0, 29:0, 30:0, 31:0};
     daysLogued.forEach(day => {
         daysAndQuantityLogued[day] = (daysAndQuantityLogued[day] + 1);
-        /* if(daysAndQuantityLogued[day]) {
-            daysAndQuantityLogued[day] = (daysAndQuantityLogued[day] + 1);
-        } else {
-            daysAndQuantityLogued[day] = 1;
-        } */
     })
-
-    /* const allDays = [];
-    daysLogued.forEach(date => {allDays.push(date)});
-    daysRegistered.forEach(date => {allDays.push(date)});
-
-    function uniqueDates(value, index, self) { 
-        return self.indexOf(value) === index;
-    }
-
-    const days = allDays.filter(uniqueDates); */
 
     const days = [1, 2, 3, 4, 5, 6, 7, 
     8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 
     20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
     const quantityRegistered = Object.values(daysAndQuantityRegistered);
     const quantityLogued = Object.values(daysAndQuantityLogued);
-    
 
     return (
         <div>

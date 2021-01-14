@@ -5,7 +5,6 @@ import { editUser, deleteUser } from '../redux/actions/actions.js';
 
 export default function User({firstName, lastName, email, id, password, date}) {
 
-   /*  const [idUser, setIdUser] = useState(); */
     const [show, setShow] = useState(false);
     const [userEdit, setUserEdit] = useState(null);
     const dispatch = useDispatch();
@@ -36,13 +35,7 @@ export default function User({firstName, lastName, email, id, password, date}) {
             email,
             password
         });
-    }, [id, firstName, lastName, email, password, date])
-
-    /* useEffect(() => {
-        if(idUser) {
-            dispatch(deleteUser(idUser));
-        }
-    }, [idUser]) */
+    }, [id, firstName, lastName, email, password, date]);
 
     return (
         <Card className="card-container-user">
@@ -57,8 +50,8 @@ export default function User({firstName, lastName, email, id, password, date}) {
                 </Modal.Header>
                 <Modal.Body>
                     <Form.Group controlId="formBasicEmail">
-                        <Form.Label className="form-register-label">Nombre</Form.Label>
-                        <Form.Control className="form-register-control"
+                        <Form.Label className="modal-form-label">Nombre</Form.Label>
+                        <Form.Control className="modal-form-control"
                             onChange={handleChange}
                             name="firstName" 
                             type="text" 
@@ -68,7 +61,7 @@ export default function User({firstName, lastName, email, id, password, date}) {
                     </Form.Group>
                     <Form.Group controlId="formBasicEmail">
                         <Form.Label className="form-register-label">Apellido</Form.Label>
-                        <Form.Control className="form-register-control"
+                        <Form.Control className="modal-form-control"
                             onChange={handleChange}
                             name="lastName" 
                             type="text" 
@@ -78,7 +71,7 @@ export default function User({firstName, lastName, email, id, password, date}) {
                     </Form.Group>
                     <Form.Group controlId="formBasicEmail">
                         <Form.Label className="form-register-label">Email</Form.Label>
-                        <Form.Control className="form-register-control"
+                        <Form.Control className="modal-form-control"
                             onChange={handleChange}
                             name="email" 
                             type="email" 
@@ -88,7 +81,7 @@ export default function User({firstName, lastName, email, id, password, date}) {
                     </Form.Group>
                     <Form.Group controlId="formBasicPassword">
                         <Form.Label className="form-register-label">Contraseña</Form.Label>
-                        <Form.Control className="form-register-control"
+                        <Form.Control className="modal-form-control"
                             onChange={handleChange}
                             name="password" 
                             type="password" 

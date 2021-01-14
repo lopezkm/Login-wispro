@@ -6,6 +6,7 @@ import { NEW_REGISTERED, NEW_LOGUED, ID_LOGUED, EDIT_USER, DELETE_USER } from '.
 
 const initialState = {
   registered: Registered,
+  registeredInfo: Registered,
   logued: Logued,
   id:""
 }
@@ -17,7 +18,8 @@ function Reducer(state = initialState, action) {
 		
 			return {
 				...state,
-				registered: [ ...state.registered, action.payload ]
+				registered: [ ...state.registered, action.payload ],
+				registeredInfo: [ ...state.registeredInfo, action.payload ],
 			};
 		
 		case NEW_LOGUED:

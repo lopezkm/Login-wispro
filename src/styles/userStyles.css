@@ -66,10 +66,27 @@
 .modal-edit-header {
     background-color: black;
     color: white;
+    border: 0.1rem solid white;
+    display: flex;
+    justify-content: center;
 }
 
 .modal-edit-footer {
     background-color: black;
+    border: 0.1rem solid white;
+}
+
+.modal-form-label {
+    margin-top: 0;
+}
+
+.modal-form-control {
+    border: none;
+    border-radius: 0;
+    border-bottom: 0.1rem solid black;
+}
+.modalform-control:focus {
+    box-shadow: none;
 }
 
 .modal-button-edit-user {

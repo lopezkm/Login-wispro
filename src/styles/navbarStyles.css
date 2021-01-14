@@ -14,13 +14,13 @@
     margin-left: 2rem;
 }
 .reset-button-navbar:focus {
-    box-shadow: none;
+    box-shadow: none !important;
     background-color: black;
     border: 0.05rem solid black;
     color:red;
 }
 .reset-button-navbar:hover {
-    box-shadow: none;
+    box-shadow: none !important;
     background-color: black;
     border: 0.05rem solid black;
     color: red;
